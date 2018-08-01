@@ -1,0 +1,22 @@
+{
+  "name": "paginadeviajes",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Lubo7 <lkramoris@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Lubo7/paginadeviajes",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1"
+  }
+}
