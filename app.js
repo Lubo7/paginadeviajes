@@ -9,6 +9,12 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+//configure view partials
+let hbs = require('hbs');
+hbs.registerPartials(`${__dirname}/views/partials`);
+let hbsUtils = require('hbs-utils')(hbs);
+hbsUtils.registerWatchedPartials(`${__dirname}/views/partials`);
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -18,6 +24,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/public/vendors',express.static(`${__dirname}/public/vendors`));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
