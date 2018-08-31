@@ -6,6 +6,18 @@ a {
   color: #00B7FF;
 }
 
+.container-fluid{
+  padding:0px;
+}
+.navbar{
+  background-color: rgba(266,266,266,0.3);
+}
 #navbarNav{
   padding-left: 30%;
+}
+
+.wrapperHeader{
+  min-height: 400px;
+  background: url('../images/back.jpeg')center center no-repeat;
+  background-size: cover;
 }
