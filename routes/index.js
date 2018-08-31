@@ -62,6 +62,7 @@ router.get('/email/send/hbs', (req, res) => {
     }
   });
 })
+
 // router.get('/email/send/hbs', (req, res) => {
 //   // Email.transporter.use('compile', HBS({
 //   //   viewEngine: 'hbs',
