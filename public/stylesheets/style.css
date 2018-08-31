@@ -10,3 +10,9 @@ a {
 #navbarNav{
   padding-left: 30%;
 }
+
+.wrapperHeader{
+  min-height: 400px;
+  background: url('../images/back.jpeg') center center no-repeat;
+  background-size: cover;
+}
