@@ -7,6 +7,12 @@ a {
 }
 
 
+.container-fluid{
+  padding:0px;
+}
+.navbar{
+  background-color: rgba(266,266,266,0.3);
+}
 #navbarNav{
   padding-left: 30%;
 }
@@ -15,4 +21,99 @@ a {
   min-height: 400px;
   background: url('../images/back.jpeg') center center no-repeat;
   background-size: cover;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 20px;
+  margin-top: 20px;
+  background-color: #141939;
+  overflow: hidden;
+  color: white;
+}
+
+footer .wrapper {
+  display: flex;
+  justify-content: center;
+}
+footer ul {
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  font-family: Catamaran;
+  font-size: 15px;
+  line-height: 30px;
+  color: white;
+}
+
+.footer-links-cases {
+  display: block;
+}
+
+footer a:hover {
+  color: white;
+}
+
+button {
+  background-color: yellow;
+  padding: 5px
+}
+
+footer h6 {
+  margin-bottom: 15px;
+}
+
+.viajes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.viaje {
+  font-size: 17px;
+  width: 30%;
+  margin: 1.5%;
+  background-color: black;
+  position: relative;
+  min-width: 300px;
+}
+
+.viaje img {
+  width: 100%;
+}
+
+.title {
+  padding: 13px;
+  padding-right: 40%;
+  color: white;
+  background-color: #141939;
+  font-size: 1.1em;
+}
+
+.price {
+  background-color: yellow;
+  font-size: 2.0em;
+  width: 40%;
+  padding: 20px 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.sitio {
+  padding: 20px 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
 }
