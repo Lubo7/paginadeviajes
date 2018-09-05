@@ -6,7 +6,6 @@ a {
   color: #00B7FF;
 }
 
-
 .container-fluid{
   padding:0px;
 }
@@ -114,6 +113,30 @@ footer h6 {
 .sitio {
   padding: 20px 10px;
   background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.about{
+  min-height: 400px;
+  background: url('../images/madrid.jpg') center center no-repeat;
+  background-size: cover;
+  background-color: rgba(0,0,0,1.5);
+  display: flex;
+  justify-content: center;
+}
+
+.about_description {
+  background-color: red;
+  min-height: 200px;
+  width:600px;
+  margin: 10%;
+}
+
+.filter {
+  min-height: 400px;
+  width: 100%;
+  background-color: rgba(23,45,667,0.5);
   display: flex;
   justify-content: center;
 }
