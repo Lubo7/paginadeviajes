@@ -114,6 +114,28 @@ footer h6 {
 .sitio {
   padding: 20px 10px;
   background-color: white;
+
+}
+.about{
+  min-height: 400px;
+  background: url('../images/madrid.JPG') center center no-repeat;
+  background-size: cover;
+  background-color:rgba(0,0,0,0.5);
   display: flex;
   justify-content: center;
+}
+
+.filter
+{
+  min-height: 400px;
+  width:100%;
+  background-color:rgba(23,45,667,0.5);
+
+
+}
+.about_description {
+  margin: 10%;
+  background-color: red;
+  min-height: 200px!important;
+  width:600px;
 }
