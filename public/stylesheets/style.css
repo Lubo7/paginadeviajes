@@ -1,11 +1,9 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
 a {
   color: #00B7FF;
 }
-
 .container-fluid{
   padding:0px;
 }
@@ -15,69 +13,29 @@ a {
 #navbarNav{
   padding-left: 30%;
 }
-
 .wrapperHeader{
-  min-height: 400px;
+  min-height: 460px;
   background: url('../images/back.jpeg') center center no-repeat;
   background-size: cover;
-}
-
-footer {
-  width: 100%;
-  padding: 20px 20px;
-  margin-top: 20px;
-  background-color: #141939;
-  overflow: hidden;
-  color: white;
-}
-
-footer .wrapper {
-  display: flex;
-  justify-content: center;
-}
-footer ul {
-  width: fit-content;
-  float: left;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-footer li {
-  list-style: none;
-}
-
-footer a {
-  font-family: Catamaran;
-  font-size: 15px;
-  line-height: 30px;
-  color: white;
-}
-
-.footer-links-cases {
-  display: block;
-}
-
-footer a:hover {
-  color: white;
+  font-size: 27px;
+  text-emphasis-color: white;
+  text-shadow: 0.5;
 }
 
 button {
   background-color: yellow;
   padding: 5px
 }
-
 footer h6 {
   margin-bottom: 15px;
 }
-
 .viajes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .viaje {
-  font-size: 17px;
+  font-size: 27px;
   width: 30%;
   margin: 1.5%;
   background-color: black;
@@ -85,16 +43,24 @@ footer h6 {
   min-width: 300px;
 }
 
+
 .viaje img {
   width: 100%;
 }
-
 .title {
   padding: 13px;
   padding-right: 40%;
   color: white;
   background-color: #141939;
   font-size: 1.1em;
+}
+
+.title3 {
+  padding: 13px;
+  padding-right: 40%;
+  color: white;
+  background-color: red;
+  font-size: 1.1em
 }
 
 .price {
@@ -109,34 +75,79 @@ footer h6 {
   display: flex;
   justify-content: center;
 }
-
 .sitio {
   padding: 20px 10px;
   background-color: white;
-  display: flex;
-  justify-content: center;
+  font-size: 37px;
+  font-weight: bold;
 }
-
 .about{
   min-height: 400px;
-  background: url('../images/madrid.jpg') center center no-repeat;
+  background: url('../images/madrid.JPG') center center no-repeat;
   background-size: cover;
-  background-color: rgba(0,0,0,1.5);
+  background-color:rgba(0,0,0,0.5);
   display: flex;
   justify-content: center;
 }
-
-.about_description {
-  background-color: red;
-  min-height: 200px;
-  width:600px;
-  margin: 10%;
-}
-
-.filter {
+.filter
+{
   min-height: 400px;
+  width:100%;
+  background-color:rgba(23,45,667,0.4);
+}
+.about_description {
+  margin: 10%;
+  background-color: white;
+  min-height: 200px!important;
+  width:600px;
+}
+
+.btn-descubri {
+  background-color: #141939;
+  color: yellow;
+  padding: 10px;
+  margin: 10px;
+}
+
+.contact {
+  background-color: red;
+  min-height: 400px;
+  margin-top: 10px!important;
+}
+
+.text-justify {
+  font-size: 20px;
+}
+
+footer {
   width: 100%;
-  background-color: rgba(23,45,667,0.5);
+  padding: 20px 20px;
+  margin-top: 20px;
+  background-color: #141939;
+  overflow: hidden;
+  color: white;
+}
+footer .wrapper {
   display: flex;
   justify-content: center;
+}
+footer ul {
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+footer li {
+  list-style: none;
+}
+footer a {
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+.footer-links-cases {
+  display: block;
+}
+footer a:hover {
+  color: white;
 }
