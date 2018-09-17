@@ -8,7 +8,8 @@ a {
   padding:0px;
 }
 .navbar{
-  background-color: rgba(266,266,266,0.3);
+  /*background-color: rgba(266,266,266,0.3);*/
+  background-color: rgba(266,266,266,0.8);
 }
 #navbarNav{
   padding-left: 30%;
@@ -110,11 +111,29 @@ footer h6 {
 }
 
 .contact {
-  background-color: red;
+  background-color: white;
   min-height: 400px;
   margin-top: 10px!important;
 }
 
+.contact a {
+  color:black;
+}
+
+.contact a:hover {
+  color: black;
+}
+
+.infoContact{
+  margin: 15px;
+}
+
+.contact hr{
+  height: 2px;
+  margin-left: 0px;
+  width: 30px;
+  background-color: blueviolet;
+}
 .text-justify {
   font-size: 20px;
 }
