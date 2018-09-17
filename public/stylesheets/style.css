@@ -4,11 +4,14 @@ body {
 a {
   color: #00B7FF;
 }
+
+
 .container-fluid{
   padding:0px;
 }
 .navbar{
-  background-color: rgba(266,266,266,0.3);
+   /*background-color: rgba(266,266,266,0.3);*/
+    background-color: rgba(266,266,266,1);
 }
 #navbarNav{
   padding-left: 30%;
@@ -110,14 +113,34 @@ footer h6 {
 }
 
 .contact {
-  background-color: red;
+  /*background-color: red;*/
   min-height: 400px;
   margin-top: 10px!important;
+}
+
+.contact a {
+    color:black;
+}
+.contact a:hover{
+    color:black;
+}
+.infoContact{
+    margin:15px;
+}
+
+.contact hr{
+    height: 2px;
+    width: 30px;
+    margin-left: 0px;
+    background-color: blueviolet;
 }
 
 .text-justify {
   font-size: 20px;
 }
+
+
+
 
 footer {
   width: 100%;
