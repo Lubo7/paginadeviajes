@@ -3,11 +3,14 @@ var router = express.Router();
 
 const Path = require('path');
 const HBS = require('nodemailer-express-handlebars');
-const Email = require ('../config/emailConf');
+const Email = require ('../Confiq/emailConf');
+let indexController = require('../Controllers/indexController');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
+  let index = new indexController(req, res, next);
+  index.index();
 });
 
 router.get('/email/send', (req, res) => {
