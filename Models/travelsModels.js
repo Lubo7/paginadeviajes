@@ -1,19 +1,20 @@
 const Sequelize = require('sequelize');
-const Connect = require('../Confiq/sequelizeConf').getConnection();
+const Connect = require('../Config/sequelizeConf').getConnection();
 
-const Travel = connect.define('travels',{
+const Travel = Connect.define('travels',{
     name: {
         type: Sequelize.STRING(45)
     },
-    text: {
+    text:{
         type: Sequelize.STRING(45)
     },
     price:{
-        type: Sequelize.MAX_SAFE_INTEGER
+        type: Sequelize.INTEGER
     },
     img:{
-        type: Sequelize.STRING(250)
+        type: Sequelize.STRING(225)
     }
-})
+});
 
-module.exports=Travel;
+module.exports= Travel;
+

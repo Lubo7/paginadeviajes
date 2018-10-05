@@ -1,16 +1,30 @@
 var express = require('express');
 var router = express.Router();
 
+const Films = require('../Models/filmsModel');
+
+router.get('/listado', (req, res) => {
+  console.log('/listado');
+
+  Films.fetchAll( (error, films) => {
+    res.render('film-list.hbs'), {
+      title: 'Listado de peliculas',
+      layout: 'layout-sakila.hbs',
+      films: films
+    }
+  });
+})
+
 const Path = require('path');
 const HBS = require('nodemailer-express-handlebars');
-const Email = require ('../Confiq/emailConf');
-let indexController = require('../Controllers/indexController');
+
+const Email = require ('../Config/emailConf');
+let indexController = require ('../Controllers/indexController');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-  let index = new indexController(req, res, next);
-  index.index();
+   let index = new indexController(req, res,next);
+    index.index();
 });
 
 router.get('/email/send', (req, res) => {
@@ -108,5 +122,6 @@ router.get('/email/send/hbs', (req, res) => {
 //     }
 //   });
 // })
+
 
 module.exports = router;

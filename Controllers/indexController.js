@@ -1,22 +1,22 @@
 const superController = require('./superController');
-const travelModel = require('../Models/travelsModels');
-class indexController extends superController {
-    constructor(req, res, next) {
+const travelsModel = require('../Models/travelsModels');
+class indexController extends superController{
+    constructor(req,res,next){
         super(req, res, next);
-        travelModel.findAll()
-            .then((data) => {
-                console.log(JSON.stringify(data))
+        travelsModel.findOne()
+            .then((data)=>{
+                this.index(data);
             })
     };
 
-    index() {
-        this.res.render('index', {title: 'Express'});
+    index(){
+        this.res.render('index',{title: 'Express'});
     }
 
-
-    index(data) {
-        this.res.render('index', {title: 'Express', travels: data});
+    index(data){
+        console.log(JSON.stringify(data));
+        this.res.render('index',{title: 'Express', travels: data});
     }
 }
-module.exports = indexController;
 
+module.exports = indexController;
