@@ -1,19 +1,18 @@
 
+
 <section class="viajes">
     {{#each travels}}
-        <div class ="viaje">
-            <div>Viaje Encontrado</div>
-        </div>
-
-    {{/each}}
-  <!--div class="viaje">
->>>>>>> 79c539b438e7f1a6eb47228552aabb1e750cd975
-    <div class="title">Ahorra mucho dinero</div>
-    <div class="price">400 €</div>
-    <div><img src="https://source.unsplash.com/200x100/?london,skyline"/></div>
-    <div class="sitio">Londres</div>
-      <button>Saber más</button>
+    <div class="viaje">
+      <div class="title">{{name}}</div>
+      <div class="price">{{price}}</div>
+      <div><img src="{{img}}"/></div>
+      <div class="sitio">{{description}}</div>
+        <!--button>Saber más</button-->
   </div>
+    {{/each}}
+
+  <!--div class="viaje">
+
   <div class="viaje">
     <div class="title">Ahorra mucho dinero</div>
     <div class="price">369 €</div>

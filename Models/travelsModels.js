@@ -13,8 +13,10 @@ const Travel = Connect.define('travels',{
     },
     img:{
         type: Sequelize.STRING(225)
+    },
+    visible: {
+      type: Sequelize.BOOLEAN
     }
 });
 
 module.exports= Travel;
-

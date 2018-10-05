@@ -5,25 +5,25 @@ const config = {
         "PORT": 3306,
         "DATABASE": "appviajes",
         "USER": "root",
-        "PASSWORD": "44865"
+        "PASSWORD": ""
       }
   },
   "test": {
       "MYSQL": {
         "IP": "127.0.0.1",
         "PORT": 3306,
-        "DATABASE": "viajes_test",
+        "DATABASE": "appviajes",
         "USER": "root",
-        "PASSWORD": "mysql"
+        "PASSWORD": ""
       }
   },
   "production": {
       "MYSQL": {
         "IP": "124.4.21.23",
         "PORT": 12345,
-        "DATABASE": "viajes",
+        "DATABASE": "appviajes",
         "USER": "root",
-        "PASSWORD": "mysql"
+        "PASSWORD": ""
       }
   }
 }
