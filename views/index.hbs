@@ -2,12 +2,11 @@
 
 <section class="viajes">
     {{#each travels}}
-    <div class="viaje">
+    <div class="viaje" id="{{id}}">
       <div class="title">{{name}}</div>
-      <div class="price">{{price}}</div>
-      <div><img src="{{img}}"/></div>
+      <div class="price">{{price}} E</div>
+      <div><img class="img-thumbnail" src="{{img}}"/></div>
       <div class="sitio">{{description}}</div>
-        <!--button>Saber más</button-->
   </div>
     {{/each}}
 

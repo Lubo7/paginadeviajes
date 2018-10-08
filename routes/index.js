@@ -5,11 +5,18 @@ const Path = require('path');
 const HBS = require('nodemailer-express-handlebars');
 const Email = require ('../Config/emailConf');
 let indexController = require ('../Controllers/indexController');
+let travelController = require ('../Controllers/travelController');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
    let index = new indexController(req, res,next);
     index.index();
+});
+
+router.get('/travels/:id', (req, res, next)=>{
+  let id = req.params.id;
+  let travelDetail = new travelController(req, res, next);
+  travelDetail.index(id);
 });
 
 router.get('/email/send', (req, res) => {

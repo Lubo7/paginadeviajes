@@ -179,3 +179,12 @@ footer a {
 footer a:hover {
   color: white;
 }
+
+.detailTravel img {
+    margin-left:2%;
+    margin-top: 2%;
+}
+
+.detailTravel .descriptionTravel {
+  margin-top: 10%;
+}
