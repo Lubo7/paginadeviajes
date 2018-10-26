@@ -1,11 +1,15 @@
 
 <section class="viajes">
     {{#each travels}}
-        <div class ="viaje">
-            <div>Viaje Encontrado</div>
+        <div class="viaje" id="{{id}}">
+            <div class="title">{{ name }}</div>
+            <div class="price">{{ price }} €</div>
+            <div><img class="img-thumbnail"   src="{{img}}"/></div>
+            <div class="sitio">{{ description }}</div>
         </div>
-
     {{/each}}
+
+
   <!--div class="viaje">
     <div class="title">Ahorra mucho dinero</div>
     <div class="price">400 €</div>

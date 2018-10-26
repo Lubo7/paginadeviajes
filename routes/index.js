@@ -5,11 +5,28 @@ const Path = require('path');
 const HBS = require('nodemailer-express-handlebars');
 const Email = require ('../Config/emailConf');
 let indexController = require ('../Controllers/indexController');
+let travelController = require('../Controllers/travelController');
+let UserController = require('../Controllers/userController');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-   let index = new indexController(req, res,next);
-    index.index();
+router.get('/', (req, res, next)=> {
+   let index = new indexController(req,res,next);
+   index.index();
+
+
+});
+
+router.get('/travels/:id',(req, res ,next)=>{
+  let id = req.params.id;
+  let travelDetail = new travelController(req, res, next);
+  travelDetail.index(id);
+});
+
+router.get('/login',(req, res,next)=>{
+    console.log("Entra en login");
+    let userController = new UserController(req, res ,next);
+    userController.index();
+
 });
 
 router.get('/email/send', (req, res) => {
@@ -45,6 +62,9 @@ router.get('/email/send/hbs', (req, res) => {
     viewPath: Path.join(__dirname, '../views/email-templates')
   }));
 
+
+
+
   let message = {
     to: 'ivan@geekshubsacademy.com',
     subject: "Email de prueba 2",
@@ -63,6 +83,8 @@ router.get('/email/send/hbs', (req, res) => {
       res.status(200).send('Respuesta' + info.response);
     }
   });
+
+
 })
 
 // router.get('/email/send/hbs', (req, res) => {
