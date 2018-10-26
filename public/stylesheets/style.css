@@ -116,9 +116,10 @@ footer h6 {
   margin-top: 10px!important;
 }
 
-.contact #separacion {
+/*.contact #separacion {
   margin-top:  5px;
-}
+}*/
+
 .contact input {
   margin-bottom: 5px;
 }
@@ -179,6 +180,7 @@ footer a:hover {
   color: white;
 }
 
+<<<<<<< HEAD
 .detailtravel img{
 
 
@@ -191,3 +193,13 @@ footer a:hover {
   margin-top:6%;
 
 }
+=======
+.detailTravel img {
+    margin-left:2%;
+    margin-top: 2%;
+}
+
+.detailTravel .descriptionTravel {
+  margin-top: 10%;
+}
+>>>>>>> 6987e6d07df36dbcedbe0fc06d4d53f7613dba00

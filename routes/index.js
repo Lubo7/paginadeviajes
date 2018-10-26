@@ -29,6 +29,12 @@ router.get('/login',(req, res,next)=>{
 
 });
 
+router.get('/travels/:id', (req, res, next)=>{
+  let id = req.params.id;
+  let travelDetail = new travelController(req, res, next);
+  travelDetail.index(id);
+});
+
 router.get('/email/send', (req, res) => {
   let message = {
     to: 'ivan@geekshubsacademy.com',

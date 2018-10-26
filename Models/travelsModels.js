@@ -16,6 +16,7 @@ const Travel = Connect.define('travels',{
     },
     visible:{
         type: Sequelize.BOOLEAN
+
     }
 });
 

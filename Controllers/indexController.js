@@ -5,11 +5,7 @@ class indexController extends superController{
         super(req, res, next);
     }
 
-/*
-    index(){
-        this.res.render('index',{title: 'Express'});
-    }
-*/
+
     index() {
 
 

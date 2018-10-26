@@ -2,8 +2,8 @@ const Sequelize = require('sequelize');
 
 class SequelizeConf{
     static getConnection(){
-        return new Sequelize('appviajes','root','44865710',{
-            host: '127.0.0.1',
+        return new Sequelize(process.env.MYSQL.DATABASE, process.env.MYSQL.USER, process.env.MYSQL.PASSWORD,{
+            host: process.env.MYSQL.IP,
             dialect:'mysql',
             pool:{
                 max: 5,

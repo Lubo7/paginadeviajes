@@ -5,7 +5,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const Session = require('express-session');
 const Flash = require('connect-flash');
-
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -28,6 +27,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/public/vendors',express.static(`${__dirname}/public/vendors`));
 
+
 app.use(Session({
     secret: 'travelapp',
     name: 'coockietravel',
@@ -39,6 +39,19 @@ app.use(Flash());
 
 
 app.use('/', indexRouter);
+
+//Gestión de la sesión
+app.use(session({
+   // Clave con la que se va a firmar el ID de las cookies
+   secret: 'clavesecreta',
+   // Nombre de la cookie
+   name: 'super-secret-cookie-name',
+   // Si se debe reguardar el objeto completo o no en cada petición.
+   resave: true,
+   // Si la sesión se debe guardar al crearla aunque no la modifiquemos.
+   saveUninitialized: true
+}));
+
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
